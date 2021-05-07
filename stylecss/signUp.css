@@ -76,10 +76,6 @@ h1 {
     margin-top: 15px;
 }
 
-.buttonSP {
-    display: inline-block;
-    margin-top: 15px;
-}
 
 .bottomform {
     display: block;
@@ -123,5 +119,11 @@ h2 {
     top: 5px;
     right: 15px;
     font-size: x-large;
+    transform: rotate(45deg);
+    
+}
+
+input {
+    font-size: larger;
     
 }
