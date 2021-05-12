@@ -128,6 +128,20 @@ input {
     
 }
 
- input:required {
-    
+
+@media (max-width: 640px) {
+    .contaner {
+        width: 100%;
+    }
+
+    .contertBox {
+        width: 100%;
+    }
+
+     h1 {
+         font-size: 20px;
+   
+    }
+
+
 }
