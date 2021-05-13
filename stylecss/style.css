@@ -1,3 +1,6 @@
+@import "./signUp.css";
+@import "./mane.css";
+
 body,
 body * {
     margin: 0;
@@ -23,10 +26,6 @@ header {
     margin-right: calc(50% - 650px);
     background: rgb(45,76,207);
     background: linear-gradient(90deg, rgba(45,76,207,1) 15%, rgba(7,152,245,1) 74%);
-}
-
-.header_content {
-    
 }
 
 .logo {
@@ -78,6 +77,46 @@ header {
     font-size: 20px;
     margin: 0 10px;
     color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .header {
+        margin: 0;
+
+    }
+
+    .header_content {
+        width: 100vw;
+        margin: 0;
+        
+    }
+
+    .navigation {
+      float: right;
+       
+    }
+
+    .navigation a {
+        
+    }
+
+    .search {
+        
+        
+    }
+
+    .searchbar {
+        
+    }
+
+    .searchbut {
+        
+        width: 20px;
+    }
+
+    .logo {
+        width: 15%;
+    }
 }
 
 
