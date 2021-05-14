@@ -1,5 +1,5 @@
 @import "./signUp.css";
-@import "./mane.css";
+
 
 body,
 body * {
@@ -92,31 +92,86 @@ header {
     }
 
     .navigation {
-      float: right;
+    line-height: 75px;
        
     }
 
-    .navigation a {
-        
-    }
-
-    .search {
-        
-        
-    }
-
-    .searchbar {
-        
-    }
-
-    .searchbut {
-        
-        width: 20px;
-    }
+    
 
     .logo {
         width: 15%;
     }
+}
+
+@media (max-width: 1000px) {
+    
+    .navigation{
+        line-height: 78px;
+    }
+
+    .navigation a {
+            font-size: 17px;
+        }
+
+        .search {
+            margin-top: 33px;
+        }
+
+    .searchbut {
+        width: 11px;
+    }
+
+    .searchbar {
+        width: 150px;
+        padding-left: 5px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 845px) {
+
+    .navigation {
+        margin: 0;
+        line-height: 40px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .search {
+        margin-top: 14px;
+    }
+
+    .searchbar {
+        width: 120px;
+        height: 12px;
+        padding-left: 5px;
+    }
+    .searchbut {
+        width: 9px;
+    }
+
+    .logo {
+        width: 15%;
+        line-height: 35px;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
+    ::placeholder {
+        font-size: 15px;
+        
+    }
+
+    .header {
+        height: 30px;
+    }
+
+
 }
 
 
