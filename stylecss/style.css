@@ -170,8 +170,105 @@ header {
     .header {
         height: 30px;
     }
+}
 
 
+@media (max-width: 660px) {
+    .navigation {
+        margin: 0;
+        line-height: 25px;
+    }
+
+    .navigation a {
+        font-size: 8px;
+        margin-left: 5px;
+        letter-spacing: 2px;
+    }
+
+    .search {
+        margin-top: 9px;
+    }
+
+    .searchbar {
+        width: 120px;
+        height: 9px;
+        padding-left: 5px;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+        
+    }
+
+    .searchbut {
+        width: 5px;
+    }
+
+    .logo {
+        width: 13%;
+        line-height: 23px;
+    }
+
+    .logo a {
+        font-size: 14px;
+    }
+
+    .header {
+        height: 20px;
+    }
+}
+
+@media (max-width: 565px) {
+    .navigation {
+        margin: 0;
+        line-height: 25px;
+    }
+
+    .navigation a {
+        font-size: 8px;
+        margin-left: 5px;
+        
+    }
+
+    .searchbar {
+        width: 100px;
+        height: 9px;
+        padding-left: 5px;
+    }
+
+    .logo a {
+        font-size: 9px;
+    }
+
+   
+}
+
+@media (max-width: 460px) {
+    .navigation {
+        line-height: 25px;
+        
+    }
+
+    .navigation a {
+        font-size: 6px;
+        margin-right: 1px;
+
+    }
+
+    .searchbar {
+        width: 85px;
+        height: 6px;
+        padding-left: 5px;
+    }
+
+    .searchbut {
+        width: 3px;
+    }
+
+    .logo a {
+        font-size: 7px;
+        letter-spacing: 3px;
+    }
 }
 
 
