@@ -1,2 +1,0 @@
-make hreader from linkin.com
-next make sign up from google.com
