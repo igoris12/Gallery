@@ -195,8 +195,9 @@ header {
         padding-left: 5px;
     }
 
-    ::placeholder {
-        font-size: 10px;
+    input::placeholder {
+        font-size: 7px;
+        
         
     }
 
@@ -215,6 +216,10 @@ header {
 
     .header {
         height: 20px;
+    }
+
+    input {
+        font-size: 6px;
     }
 }
 
