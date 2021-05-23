@@ -2,6 +2,7 @@
 let inputDirection = { x: 0, y: 0 }
 let lastInputDirection = { x: 0, y: 0 }
 
+//return and add w,s,a,d after ggame will be finished
 window.addEventListener('keydown', a => {
     switch (a.key) {
         case 'ArrowUp':

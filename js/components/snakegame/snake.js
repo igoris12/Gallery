@@ -1,7 +1,8 @@
 import { getInputDirection } from './input.js';
 
-const SNAKE_SPEED = 1;
+const SNAKE_SPEED = 5;
 const sankeBody = [{ x: 10, y: 11 }];
+let newSegments = 0;
 
 function update() {
    const inputDirection = getInputDirection()
@@ -23,6 +24,23 @@ function draw(gameBoard) {
  })
 }
 
+function expanSanek (amount) {
+    newSegments += amount
+ }
+ console.log(newSegments);
+
+ function onSnake (position) {
+     return sankeBody.some(segment => {
+         return equalPositions(segment, position)
+     })
+
+ }
+
+ function equalPositions(pos1, pos2) {
+     return pos1.x === pos2.x && pos1.y === pos2.y
+ }
+
 export { SNAKE_SPEED };
 export { update };
 export { draw };
+export { expanSanek, onSnake};
