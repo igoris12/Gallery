@@ -5,42 +5,50 @@ const sankeBody = [{ x: 10, y: 11 }];
 let newSegments = 0;
 
 function update() {
-   const inputDirection = getInputDirection()
-  for (let i = sankeBody.length - 2; i >= 0; i--) {
-      sankeBody[i + 1] = {  ...sankeBody[i] }
-  }
- 
-  sankeBody[0].x += inputDirection.x;
-  sankeBody[0].y += inputDirection.y;
+    addSegments()
+    const inputDirection = getInputDirection()
+    for (let i = sankeBody.length - 2; i >= 0; i--) {
+        sankeBody[i + 1] = { ...sankeBody[i] }
+    }
+
+    sankeBody[0].x += inputDirection.x;
+    sankeBody[0].y += inputDirection.y;
 }
 
 function draw(gameBoard) {
- sankeBody.forEach(segment => {
-     const snakeElement = document.createElement('div')
-     snakeElement.style.gridRowStart = segment.y
-     snakeElement.style.gridColumnStart = segment.x
-     snakeElement.classList.add('snake')
-     gameBoard.appendChild(snakeElement)
- })
+    sankeBody.forEach(segment => {
+        const snakeElement = document.createElement('div')
+        snakeElement.style.gridRowStart = segment.y
+        snakeElement.style.gridColumnStart = segment.x
+        snakeElement.classList.add('snake')
+        gameBoard.appendChild(snakeElement)
+    })
 }
 
-function expanSanek (amount) {
+function expanSanek(amount) {
     newSegments += amount
- }
- console.log(newSegments);
+}
+console.log(newSegments);
 
- function onSnake (position) {
-     return sankeBody.some(segment => {
-         return equalPositions(segment, position)
-     })
+function onSnake(position) {
+    return sankeBody.some(segment => {
+        return equalPositions(segment, position)
+    })
 
- }
+}
 
- function equalPositions(pos1, pos2) {
-     return pos1.x === pos2.x && pos1.y === pos2.y
- }
+function equalPositions(pos1, pos2) {
+    return pos1.x === pos2.x && pos1.y === pos2.y
+}
+
+function addSegments() {
+    for (let i = 0; i < newSegments; i++) {
+        sankeBody.push({ ...sankeBody[sankeBody.length - 1] })
+    }
+    newSegments = 0;
+}
 
 export { SNAKE_SPEED };
 export { update };
 export { draw };
-export { expanSanek, onSnake};
+export { expanSanek, onSnake };
