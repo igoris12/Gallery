@@ -28,13 +28,22 @@ function draw(gameBoard) {
 function expanSanek(amount) {
     newSegments += amount
 }
-console.log(newSegments);
 
-function onSnake(position) {
-    return sankeBody.some(segment => {
+
+function onSnake(position, { ignoreHead = false } = {}) {
+    return sankeBody.some((segment, index) => {
+        if (ignoreHead && index === 0) return false
         return equalPositions(segment, position)
     })
 
+}
+
+function getSankeHead() {
+    return sankeBody[0]
+}
+
+function sankeInteresection() {
+    return onSnake(sankeBody[0], { ignoreHead: true })
 }
 
 function equalPositions(pos1, pos2) {
@@ -52,3 +61,5 @@ export { SNAKE_SPEED };
 export { update };
 export { draw };
 export { expanSanek, onSnake };
+export { getSankeHead };
+export { sankeInteresection };
