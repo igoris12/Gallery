@@ -7,4 +7,13 @@ function randomGridPosition() {
     }
 }
 
+function outsideGrid(position) {
+    return (
+        position.x < 1 || position.x > GridSize ||
+        position.y < 1 || position.y > GridSize
+    )
+}
+
+export { outsideGrid }
 export { randomGridPosition };
+
