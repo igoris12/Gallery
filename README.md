@@ -12,7 +12,9 @@ can make better you can always write me in github.
 
 Site published at: https://igoris12.github.io/Gallery/
 
-## Project features
+## Project
+
+Snake Game - Css, HTTML, Javascript
 
 ## Authors
 
