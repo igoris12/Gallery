@@ -1,61 +1,59 @@
-@import "./signUp.css";
-
+@import './signUp.css';
 
 body,
 body * {
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    word-break: break-all;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-break: break-all;
 }
 
 body {
-    text-align: center;
-    background-color: #fcf2e0;
-
-    
+  background: #fcf2e0;
 }
 
-
 header {
-    height: 60px;
-    width: 1300px;
-    z-index: 12;
-    position: fixed;
-    margin-left: calc(50% - 650px);
-    margin-right: calc(50% - 650px);
-    background: rgb(45,76,207);
-    background: linear-gradient(90deg, rgba(45,76,207,1) 15%, rgba(7,152,245,1) 74%);
+  height: 60px;
+  width: 100vw;
+  z-index: 12;
+  margin-left: calc(50% - 650px);
+  margin-right: calc(50% - 650px);
+  background-color: rgb(45, 76, 207);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 76, 207, 1) 15%,
+    rgba(7, 152, 245, 1) 74%
+  );
+  border: 1px solid black;
 }
 
 .logo {
-    width: 20%;
-    float: left;
-    line-height: 60px;
+  width: 20%;
+  float: left;
+  line-height: 60px;
+  margin-left: 15px;
 }
 
 .logo a {
-    text-decoration: none;
-    font-size: 30px;
-    color: #fff;
-    letter-spacing: 5px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 5px;
 }
 
 .search {
-    float: left;
-    margin-top: 25px;
-    overflow: hidden;
-    
+  float: left;
+  margin-top: 25px;
+  overflow: hidden;
 }
 
 .searchbar {
-    border-radius: 4px;
-    border: none;
-    width: 230px;
-    height: 22px;
-    
+  border-radius: 4px;
+  border: none;
+  width: 230px;
+  height: 22px;
 }
 
 .searchbut {
@@ -63,219 +61,242 @@ header {
   border: none;
   cursor: pointer;
   float: left;
-  
-
 }
 
 .navigation {
-    line-height: 60px;
-    float: right;
-    margin-right: 15px
+  line-height: 60px;
+  float: right;
+  margin-right: 15px;
 }
 
 .navigation a {
-    text-decoration: none;
-    letter-spacing: 4px;
-    font-size: 20px;
-    margin: 0 10px;
-    color: #fff;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
 }
 
 @media (max-width: 1100px) {
-    .header {
-        margin: 0;
+  .header {
+    margin: 0;
+  }
 
-    }
+  .header_content {
+    width: 100vw;
+    margin: 0;
+  }
 
-    .header_content {
-        width: 100vw;
-        margin: 0;
-        
-    }
-
-    .navigation {
+  .navigation {
     line-height: 75px;
-       
-    }
+  }
 
-    
-
-    .logo {
-        width: 15%;
-    }
+  .logo {
+    width: 15%;
+  }
 }
 
 @media (max-width: 1000px) {
-    
-    .navigation{
-        line-height: 78px;
-    }
+  .navigation {
+    line-height: 78px;
+  }
 
-    .navigation a {
-            font-size: 17px;
-        }
+  .navigation a {
+    font-size: 17px;
+  }
 
-        .search {
-            margin-top: 33px;
-        }
+  .search {
+    margin-top: 33px;
+  }
 
-    .searchbut {
-        width: 11px;
-    }
+  .searchbut {
+    width: 11px;
+  }
 
-    .searchbar {
-        width: 150px;
-        padding-left: 5px;
-        height: 15px;
-    }
+  .searchbar {
+    width: 150px;
+    padding-left: 5px;
+    height: 15px;
+  }
 }
 
 @media (max-width: 845px) {
+  .navigation {
+    margin: 0;
+    line-height: 40px;
+  }
 
-    .navigation {
-        margin: 0;
-        line-height: 40px;
-    }
+  .navigation a {
+    font-size: 12px;
+    margin-left: 5px;
+  }
 
-    .navigation a {
-        font-size: 12px;
-        margin-left: 5px;
-    }
+  .search {
+    margin-top: 14px;
+  }
 
-    .search {
-        margin-top: 14px;
-    }
+  .searchbar {
+    width: 120px;
+    height: 12px;
+    padding-left: 5px;
+  }
+  .searchbut {
+    width: 9px;
+  }
 
-    .searchbar {
-        width: 120px;
-        height: 12px;
-        padding-left: 5px;
-    }
-    .searchbut {
-        width: 9px;
-    }
+  .logo {
+    width: 15%;
+    line-height: 35px;
+  }
 
-    .logo {
-        width: 15%;
-        line-height: 35px;
-    }
+  .logo a {
+    font-size: 18px;
+  }
 
-    .logo a {
-        font-size: 18px;
-    }
+  ::placeholder {
+    font-size: 15px;
+  }
 
-    ::placeholder {
-        font-size: 15px;
-        
-    }
-
-    .header {
-        height: 30px;
-    }
+  .header {
+    height: 30px;
+  }
 }
 
-
 @media (max-width: 660px) {
-    .navigation {
-        margin: 0;
-        line-height: 25px;
-    }
+  .navigation {
+    margin: 0;
+    line-height: 25px;
+  }
 
-    .navigation a {
-        font-size: 8px;
-        margin-left: 5px;
-        letter-spacing: 2px;
-    }
+  .navigation a {
+    font-size: 8px;
+    margin-left: 5px;
+    letter-spacing: 2px;
+  }
 
-    .search {
-        margin-top: 9px;
-    }
+  .search {
+    margin-top: 9px;
+  }
 
-    .searchbar {
-        width: 120px;
-        height: 9px;
-        padding-left: 5px;
-    }
+  .searchbar {
+    width: 120px;
+    height: 9px;
+    padding-left: 5px;
+  }
 
-    input::placeholder {
-        font-size: 7px;
-        
-        
-    }
+  input::placeholder {
+    font-size: 7px;
+  }
 
-    .searchbut {
-        width: 5px;
-    }
+  .searchbut {
+    width: 5px;
+  }
 
-    .logo {
-        width: 13%;
-        line-height: 23px;
-    }
+  .logo {
+    width: 13%;
+    line-height: 23px;
+  }
 
-    .logo a {
-        font-size: 14px;
-    }
+  .logo a {
+    font-size: 14px;
+  }
 
-    .header {
-        height: 20px;
-    }
+  .header {
+    height: 20px;
+  }
 
-    input {
-        font-size: 6px;
-    }
+  input {
+    font-size: 6px;
+  }
 }
 
 @media (max-width: 565px) {
-    .navigation {
-        margin: 0;
-        line-height: 25px;
-    }
+  .navigation {
+    margin: 0;
+    line-height: 25px;
+  }
 
-    .navigation a {
-        font-size: 8px;
-        margin-left: 5px;
-        
-    }
+  .navigation a {
+    font-size: 8px;
+    margin-left: 5px;
+  }
 
-    .searchbar {
-        width: 100px;
-        height: 9px;
-        padding-left: 5px;
-    }
+  .searchbar {
+    width: 100px;
+    height: 9px;
+    padding-left: 5px;
+  }
 
-    .logo a {
-        font-size: 9px;
-    }
-
-   
+  .logo a {
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 460px) {
-    .navigation {
-        line-height: 25px;
-        
-    }
+  .navigation {
+    line-height: 25px;
+  }
 
-    .navigation a {
-        font-size: 6px;
-        margin-right: 1px;
+  .navigation a {
+    font-size: 6px;
+    margin-right: 1px;
+  }
 
-    }
+  .searchbar {
+    width: 85px;
+    height: 6px;
+    padding-left: 5px;
+  }
 
-    .searchbar {
-        width: 85px;
-        height: 6px;
-        padding-left: 5px;
-    }
+  .searchbut {
+    width: 3px;
+  }
 
-    .searchbut {
-        width: 3px;
-    }
-
-    .logo a {
-        font-size: 7px;
-        letter-spacing: 3px;
-    }
+  .logo a {
+    font-size: 7px;
+    letter-spacing: 3px;
+  }
 }
 
+/* hero */
 
+.hero {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.heroH1 {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.containert {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.containert > div {
+  display: flex;
+  align-items: center;
+}
+
+.containert > div > p {
+  margin-left: 10px;
+  text-align: left;
+  word-break: break-word;
+}
+
+.containert > img {
+  display: inline-block;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
