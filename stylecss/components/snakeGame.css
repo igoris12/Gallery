@@ -50,3 +50,44 @@ body {
   color: gray;
   cursor: pointer;
 }
+
+/* options */
+
+.contentBox {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 130px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+}
+
+.contentBox .options {
+  display: inline-block;
+}
+
+.contentBox .options > li {
+  margin-top: 10px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.taggle-thing {
+  display: inline-block;
+  width: 45px;
+  position: absolute;
+  top: 6px;
+  left: 50px;
+  cursor: pointer;
+}
+
+.taggle-thing > span {
+  background: wheat;
+  width: 45px;
+  height: 4px;
+  display: block;
+  margin-top: 4px;
+  cursor: pointer;
+}
