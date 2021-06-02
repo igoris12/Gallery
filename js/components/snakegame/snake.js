@@ -1,6 +1,6 @@
 import { getInputDirection } from './input.js';
 
-const SNAKE_SPEED = 5;
+let SNAKE_SPEED = 5;
 const sankeBody = [{ x: 10, y: 11 }];
 let newSegments = 0;
 
@@ -63,3 +63,25 @@ export { draw };
 export { expanSanek, onSnake };
 export { getSankeHead };
 export { sankeInteresection };
+
+//Update
+function chabgeSnakeSpeedLevel1() {
+    SNAKE_SPEED = 5
+
+};
+
+document.getElementById("level1").addEventListener("click", chabgeSnakeSpeedLevel1);
+
+function chabgeSnakeSpeedLevel2() {
+    SNAKE_SPEED = 10
+
+};
+
+document.getElementById("level2").addEventListener("click", chabgeSnakeSpeedLevel2);
+
+function chabgeSnakeSpeedLevel3() {
+    SNAKE_SPEED = 15
+
+};
+
+document.getElementById("level3").addEventListener("click", chabgeSnakeSpeedLevel3);
