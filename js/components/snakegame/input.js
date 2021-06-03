@@ -7,24 +7,45 @@ window.addEventListener('keydown', a => {
     switch (a.key) {
         case 'ArrowUp':
             if (lastInputDirection.y !== 0) break
-            inputDirection = { x: 0, y: -1}
+            inputDirection = { x: 0, y: -1 }
             break
 
         case 'ArrowDown':
             if (lastInputDirection.y !== 0) break
-            inputDirection = { x: 0, y: 1}
+            inputDirection = { x: 0, y: 1 }
             break
 
-         case 'ArrowLeft':
+        case 'ArrowLeft':
             if (lastInputDirection.x !== 0) break
-            inputDirection = { x: -1, y: 0}
+            inputDirection = { x: -1, y: 0 }
             break
 
-         case 'ArrowRight':
+        case 'ArrowRight':
             if (lastInputDirection.x !== 0) break
-            inputDirection = { x: 1, y: 0}
+            inputDirection = { x: 1, y: 0 }
             break
-        
+
+        case 'w':
+            if (lastInputDirection.y !== 0) break
+            inputDirection = { x: 0, y: -1 }
+            break
+
+        case 's':
+            if (lastInputDirection.y !== 0) break
+            inputDirection = { x: 0, y: 1 }
+            break
+
+        case 'a':
+            if (lastInputDirection.x !== 0) break
+            inputDirection = { x: -1, y: 0 }
+            break
+
+        case 'd':
+            if (lastInputDirection.x !== 0) break
+            inputDirection = { x: 1, y: 0 }
+            break
+
+
     }
 
 })
@@ -35,4 +56,4 @@ function getInputDirection() {
     return inputDirection
 }
 
-export {getInputDirection}
+export { getInputDirection }

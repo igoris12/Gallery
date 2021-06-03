@@ -60,18 +60,48 @@ body {
   left: 130px;
   width: 200px;
   height: 200px;
-  background-color: white;
+  background-color: gainsboro;
   text-align: center;
 }
 
 .contentBox .options {
   display: inline-block;
+  list-style: none;
 }
 
 .contentBox .options > li {
   margin-top: 10px;
-  background-color: red;
+  background-color: blue;
   cursor: pointer;
+  border-radius: 5px;
+  font-size: larger;
+  color: white;
+  box-shadow: 3px 2px 3px gray;
+}
+
+.contentBox .options > li:hover {
+  background: rebeccapurple;
+  color: aliceblue;
+  box-shadow: 3px 4px 5px black;
+}
+
+.contentBox button {
+  display: inline-block;
+  width: 60%;
+  margin-top: 30px;
+  background: yellow;
+  color: black;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 3px 2px 3px gray;
+}
+
+.contentBox button:hover {
+  background: green;
+  color: white;
+  box-shadow: 3px 2px 3px black;
 }
 
 .taggle-thing {
@@ -81,6 +111,14 @@ body {
   top: 6px;
   left: 50px;
   cursor: pointer;
+}
+
+.taggle-thing:hover {
+  box-shadow: 2px 2px 2px grey;
+}
+
+.taggle-thing > span:hover {
+  box-shadow: 2px 2px 2px gray;
 }
 
 .taggle-thing > span {
