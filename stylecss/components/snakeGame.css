@@ -150,6 +150,7 @@ body {
   height: 250px;
   margin-top: 80px;
   background: gainsboro;
+  display: none;
 }
 
 .info > p {
