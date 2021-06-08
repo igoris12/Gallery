@@ -1,10 +1,11 @@
 const hamburger = document.querySelector('#hamburger')
 const options = document.querySelector('.contentBox')
 const closeBut = document.querySelector('.closeOptions')
-
+const helpInfo = document.querySelector('.info')
 function closeOptioms() {
     options.style.display = 'none'
     hamburger.style.display = 'inline-block'
+    helpInfo.style.display = 'none'
 };
 
 
@@ -20,7 +21,7 @@ hamburger.addEventListener('click', showOption)
 
 const helpBut = document.querySelector('.help')
 const closeHelpBut = document.querySelector('.closeHelp')
-const helpInfo = document.querySelector('.info')
+
 console.log(helpInfo);
 
 function openHelp() {
