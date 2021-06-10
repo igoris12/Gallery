@@ -27,12 +27,12 @@ body {
 }
 
 .snake {
-  background-color: royalblue;
+  background-color: rgb(10, 143, 50);
   border: 0.25vmin solid black;
 }
 
 .food {
-  background-color: yellow;
+  background-color: rgb(255, 0, 0);
   border: 0.25vmin solid black;
 }
 
